@@ -6,6 +6,14 @@
 	font-size: 18px;
 }
 
+@media screen and (min-width: 1024px){
+	.header-offer-button:hover {
+		color: #000;
+		background-color: #fff;
+	}
+
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -15,13 +23,13 @@ html {
 	margin: 0 auto;
 }
 
-nav {
+.nav-items {
 	padding: 15px 0;
 	background-color: #4e4e4e;
 	text-transform: uppercase;
 }
 
-nav ul {
+.nav-items .nav-links {
 	display: flex;
 	gap: 46px;
 	list-style: none;
@@ -40,7 +48,7 @@ nav ul {
 	font-weight: 700;
 }
 
-a {
+.a-links {
 	text-decoration: none;
 	color: #fff;
 }
@@ -49,9 +57,7 @@ a {
 	cursor: not-allowed;
 }
 
-/* //////////////////img///////////////////////////// */
-
-.img {
+.header-main-img {
 	height: 100vh;
 	width: 100%;
 	background: rgba(0, 0, 0, 0.4) url("img/wolves-big.jpg");
@@ -74,12 +80,12 @@ a {
 	font-size: 36px;
 }
 
-.img-content p {
+.img-content .header-paragraph {
 	margin-bottom: 50px;
 	font-weight: 700;
 }
 
-button {
+.header-offer-button {
 	width: 164px;
 	height: 40px;
 	border: 3px solid #fff;
@@ -88,52 +94,45 @@ button {
 	transition: 1s;
 }
 
-button:hover {
-	color: #000;
-	background-color: #fff;
-}
 
-/* ///////////////////////////section////////////////////////// */
 
 .bgc-our-specialist {
 	background: #f1f1f1;
 }
 
-.about-us h2 {
+.about-us .about-us-header {
 	padding: 50px 0 78px 0;
 	font-size: 36px;
 	color: #152d41;
 }
 
-.our-specialist img {
+.about-us-our-specialist .our-specialist-img {
 	width: 220px;
 	aspect-ratio: 1/1;
 	border-radius: 50%;
 }
 
-.our-specialist {
+.about-us-our-specialist {
 	display: flex;
 	gap: 44px;
 }
 
-.our-specialist:nth-of-type(odd) {
+.about-us-our-specialist:nth-of-type(odd) {
 	display: flex;
 }
 
-.our-specialist:nth-of-type(even) {
+.about-us-our-specialist:nth-of-type(even) {
 	flex-direction: row-reverse;
 	text-align: end;
 	padding: 50px 0;
 }
 
-.specialist-text {
+.about-us-description {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 20px;
 }
-
-/* //////////////////flex////////////////////////////// */
 
 .bgc-offer {
 	background-color: #405d78;
@@ -192,9 +191,7 @@ button:hover {
 	background-color: #e07a64;
 }
 
-/* ////////////////////footer//////////////// */
-
-footer {
+.footer {
 	background: #4e4e4e;
 }
 
@@ -210,7 +207,7 @@ footer {
 	display: flex;
 	gap: 18px;
 }
-.icons i {
+.icons .fa-brands{ 
 	font-size: 30px;
 	color: #fff;
 }
